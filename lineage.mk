@@ -20,7 +20,7 @@ PRODUCT_RELEASE_NAME := jason
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Time Zone data for recovery
 PRODUCT_COPY_FILES += \
@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.rmnet.func.name=rmnet_bam
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_jason
+PRODUCT_NAME := lineage_jason
 PRODUCT_DEVICE := jason
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
